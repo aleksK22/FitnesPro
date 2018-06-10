@@ -1,0 +1,16 @@
+<mat-toolbar>
+  <div fxHide.gt-xs>
+     <button (click)="OnToggle()" mat-icon-button>
+        <mat-icon>menu</mat-icon>
+     </button>
+  </div>
+  <div><a (click)="OnLogoutFull()" style="cursor:pointer" >Logo</a></div>
+  <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+      <ul fxLayout class="navigation" fxLayoutGap="10px">
+          <li ><a routerLink="/login">Login</a></li>
+          <li ><a routerLink="/signup">Signup</a></li>
+          <li ><a routerLink="/training">Training</a></li>
+          <li ><a (click)="onLogout()" style="cursor: pointer">LogOut</a></li>
+      </ul>
+  </div>
+</mat-toolbar>
