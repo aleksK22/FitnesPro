@@ -1,0 +1,187 @@
+.welcome{
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+.welcome::after {
+        content: "";
+      
+ 
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -2;   
+        background-image: url("../../assets/images/mountains.jpg");
+      
+        /* Full height */
+        height: 100%;
+      
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+}
+      
+
+
+mat-card{
+    /* background:linear-gradient(to bottom,#29B6F6,#283593); */
+    /* background:linear-gradient(to bottom,rgba(41, 147, 246,0.7),transparent); */
+    background:transparent;
+    box-shadow:none !important;
+    /* box-shadow: 0 -3px 5px -5px rgba(0,0,0,.4) !important; */
+    /* box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 5px 30px 0 rgba(0,0,0,.17) !important; */
+    color:rgb(255,255, 255) !important;
+    border-radius: 0.55rem;
+    margin:4rem;
+    transition: all .5s ease-in-out;
+    max-height: 340px;
+    max-width: 300px;
+}
+
+.icon-card-login mat-icon{
+    /* color: rgb(137, 151, 235); */
+    color:rgb(201, 205, 247);
+    font-size: 6rem !important;
+    height: 6rem !important;
+    width: 6rem !important;
+    margin: 30px 28px;
+    text-shadow: 0 5px 10px  rgba(0,0,0,.27) !important;
+}
+
+.icon-card-login {
+    /* border-radius:  100px ;
+    background: rgb(238, 240, 255);
+    box-shadow: 0 0 5rem rgba(0,0,255,.1) !important; */
+    width: 10rem;
+    height: 10rem; 
+    margin: 20px auto 70px;
+}
+
+
+/* .logcard{
+    background:linear-gradient(to bottom,#00838F,#283593);
+    color:rgb(255,255, 255) !important; 
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 5px 30px 0 rgba(0,0,0,.17) !important;
+
+}
+
+
+
+.signcard{
+    background:linear-gradient(to bottom,#29B6F6,#283593);
+    color:rgb(255,255, 255) !important;
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 5px 30px 0 rgba(0,0,0,.17) !important;
+
+} */
+
+
+/* mat-card:hover {
+    transform: scale(1.1);
+    background: linear-gradient(to bottom,#711b86,#00057a);
+    color:rgb(255,255, 255) !important;
+    box-shadow: 0 0 4rem rgba(0,0,255,.3) !important;
+} */
+
+
+
+.sub-text {
+    padding: 0px 40px;
+    max-width:240px !important;
+    min-width: 200px;
+    font-size: 1.4rem;
+    letter-spacing: .08rem;
+    margin-bottom: 0px !important;
+}
+
+.small-text{
+    font-size: 0.85rem;
+    padding: 0px 40px;
+    max-width:200px !important;
+    color:rgb(49, 176, 240);
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+
+.buttons a {
+    text-decoration: none;
+	display: block;
+	position: relative;
+	line-height: 44px;
+    background-color: transparent;
+	-moz-border-radius: 32px;
+	-webkit-border-radius: 32px;
+	border-radius: 32px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 3px rgba(0, 0, 0, .1);
+    border: 2px solid #6794f5;
+    color:rgb(201, 205, 247);
+}
+
+.buttons a:hover {
+    background-color: #6794f544;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .icon-card-login {
+        /* border-radius:  100px ;
+        background: rgb(238, 240, 255);
+        box-shadow: 0 0 5rem rgba(0,0,255,.1) !important; */
+        width: auto;
+        height: auto; 
+        margin: 0px auto !important;
+    }
+
+    /* mat-card{
+        margin:2rem;
+    } */
+
+    .sub-text{
+        font-size: 1.1rem;
+        letter-spacing: .05rem;
+        margin: 0px !important;
+        min-width: 110px;
+    }
+
+    .icon-card-login mat-icon{
+        font-size: 4rem !important;
+        height: 5rem !important;
+        width: 5rem !important;
+        margin: 25px 23px 13px;
+    }
+
+    .small-text{
+        min-width: 100px;
+    }
+}
+
+
+@media screen  and (max-width: 768px) {
+    .icon-card-login {
+        /* border-radius:  100px ;
+        background: rgb(238, 240, 255);
+        box-shadow: 0 0 5rem rgba(0,0,255,.1) !important; */
+        width: 10rem;
+        height: auto; 
+        margin: 10px auto 0px;
+    }
+
+    .small-text{
+        min-width: 150px;
+    }
+
+
+    .sub-text{
+
+        margin-top: 0px !important;
+    }
+
+}

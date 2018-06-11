@@ -1,3 +1,18 @@
-<p>
-  welcome works!
-</p>
+<div class="welcome" fxLayout="column" fxLayout.gt-md="row" fxLayoutAlign="top center" fxLayoutAlign.gt-md="center" fxLayoutGap.gt-md="20px">
+   
+  <mat-card class="pointer logcard block" >
+    <p class="sub-text" >Alredy a user!</p>
+    <div class="icon-card-login" ><mat-icon>directions_bike</mat-icon></div>
+    <div class="buttons">
+      <a  href="" routerLink="login">LOGIN</a>
+     </div>
+    
+  </mat-card>
+  <mat-card  class="pointer signcard block" routerLink="signup">
+    <p class="sub-text" >Join us today!</p>
+    <div class="icon-card-login"><mat-icon>directions_run</mat-icon></div>
+    <div class="buttons">
+      <a  href="" routerLink="signup">SIGN UP</a>
+     </div>
+  </mat-card>
+</div>

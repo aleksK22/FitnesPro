@@ -1,12 +1,15 @@
-<mat-sidenav-container>
+<mat-sidenav-container class="example-container">
     <mat-sidenav>
        <app-sidenav></app-sidenav>
     </mat-sidenav>
     <mat-sidenav-content>
-        <app-header></app-header>
+        <app-header style="z-index: 100;"></app-header>
         <main>
-            <router-outlet></router-outlet>
+            <div class="page" [@routerAnimations]="prepareRouteTransition(outlet)"  >
+                <router-outlet #outlet="outlet"></router-outlet>
+              </div>
         </main>
     </mat-sidenav-content>
 </mat-sidenav-container>
+<div class="layer"></div>
 
